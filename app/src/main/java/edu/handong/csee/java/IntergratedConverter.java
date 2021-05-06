@@ -4,7 +4,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 import edu.handong.csee.java.Converter.Convertible;
-import edu.handong.csee.java.converters.*;
+import edu.handong.csee.java.Converter.*;
 
 /**
  * This class is IntegratedConverter class.
