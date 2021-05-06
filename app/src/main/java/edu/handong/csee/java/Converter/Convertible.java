@@ -5,7 +5,6 @@ package edu.handong.csee.java.Converter;
  */
 
 public interface Convertible {
-
     public void setFromValue(double fromValue);
     public double getConvertedValue();
     public void convert();
