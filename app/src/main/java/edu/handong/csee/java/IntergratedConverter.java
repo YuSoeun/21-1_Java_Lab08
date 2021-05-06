@@ -10,28 +10,22 @@ import edu.handong.csee.java.Converter.*;
  * This class is IntegratedConverter class.
  */
 public class IntegratedConverter {
-
     private double fromValue;
 
     /**
     * @param String[] args
     */
     public static void main(String[] args) {
-
         IntegratedConverter myConverter = new IntegratedConverter();
 
         myConverter.run(args);
-
     }
-
     private void run(String[] args) {
-
         fromValue = Double.parseDouble(args[0]);
         String originalMeasure = Util.getUppercaseString(args[1]);
         String targetMeasure = Util.getUppercaseString(args[2]);
 
         if(!targetMeasure.equals("ALL")) {
-
             String converterName = "edu.handong.csee.java.hw2.converters." + originalMeasure + "To" + targetMeasure + "Converter";
 
             // You will learn about the try-catch block and Exception in L19
@@ -50,7 +44,6 @@ public class IntegratedConverter {
             } catch(ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
                 System.out.println("The converter (" + converterName + ") for " + originalMeasure + " to " + targetMeasure + " does not exist!!");
             }
-
         } else {
 
             AllConverter myAllConverter = new AllConverter();
